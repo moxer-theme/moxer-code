@@ -1,6 +1,6 @@
 {
   "name": "moxer-theme",
-  "displayName": "moxer Theme",
+  "displayName": "Moxer Theme",
   "publisher": "Equinusocio",
   "description": "From the Material Theme authors.. Moxer is here to brings your DX to another level.",
   "version": "0.1.0",
@@ -9,7 +9,7 @@
   "author": "Mattia Astorino [@equinusocio]",
   "icon": "assets/logo.png",
   "galleryBanner": {
-    "color": "#1B1933",
+    "color": "#090A0F",
     "theme": "dark"
   },
   "homepage": "https://github.com/moxer-theme/moxer-code",
