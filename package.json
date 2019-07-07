@@ -7,7 +7,7 @@
   "preview": true,
   "license": "Apache-2.0",
   "author": "Mattia Astorino [@equinusocio]",
-  "icon": "assets/logo.png",
+  "icon": "logo.png",
   "galleryBanner": {
     "color": "#090A0F",
     "theme": "dark"
