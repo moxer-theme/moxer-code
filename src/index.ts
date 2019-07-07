@@ -57,11 +57,39 @@ themes.forEach(theme => {
       yellow: colors.base.yellow,
       brightYellow: colors.base.yellow
     }
+    // ui: {
+    //   // the cursor color
+    //   cursor: "",
+    //   // used for visible whitespace (see the editor.renderWhitespace VS Code setting)
+    //   invisibles: "",
+    //   // indentation guidelines in the editor pane
+    //   guide: "",
+    //   // colors the line your cursor is on, in place of the boundary lines
+    //   lineHighlight: "",
+    //   // ighlights matches from the find widge
+    //   findMatchHighlight: "",
+    //   // highlights matches from the find widget
+    //   currentFindMatchHighlight: "",
+    //   // highlights the selected area for "find in selection"
+    //   findRangeHighlight: "",
+    //   // background for a selected range of lines
+    //   rangeHighlight: "",
+    //   // highlights text selected with the cursor
+    //   selection: "",
+    //   // highlights text which matches the selected text
+    //   selectionHighlight: "",
+    //   // when the cursor is on a symbol, highlights places that symbol is read
+    //   wordHighlight: "",
+    //   // when the cursor is on a symbol, highlights places that symbol is written
+    //   wordHighlightStrong: "",
+    //   // color of hyperlinks when clicked
+    //   activeLinkForeground: ""
+    // }
   };
 
   generateTheme(
     theme.name,
     colorSet,
-    path.join(__dirname, `build/${theme.name}.json`)
+    path.join(__dirname, `../build/${theme.name}.json`)
   );
 });

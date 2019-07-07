@@ -41,16 +41,10 @@
   "extensionKind": "ui",
   "contributes": {
     "themes": [{
-        "label": "Palenight",
-        "uiTheme": "vs-dark",
-        "path": "./output/Material-Theme-Palenight.json"
-      },
-      {
-        "label": "Darker",
-        "uiTheme": "vs-dark",
-        "path": "./output/Material-Theme-Darker.json"
-      }
-    ]
+      "label": "Moxer",
+      "uiTheme": "vs-dark",
+      "path": "./build/Moxer.json"
+    }]
   },
   "devDependencies": {
     "@types/node": "^7.0.10",
