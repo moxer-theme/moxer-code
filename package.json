@@ -21,8 +21,8 @@
     "url": "https://github.com/moxer-theme/moxer-code/issues"
   },
   "scripts": {
-    "prestart": "tsc index.ts",
-    "start": "node index.js"
+    "prestart": "tsc src/index.ts",
+    "start": "node src/index.js"
   },
   "engines": {
     "vscode": "^1.36.0"
@@ -41,17 +41,20 @@
   "extensionKind": "ui",
   "contributes": {
     "themes": [{
-      "label": "Palenight",
-      "uiTheme": "vs-dark",
-      "path": "./output/Material-Theme-Palenight.json"
-    }, {
-      "label": "Darker",
-      "uiTheme": "vs-dark",
-      "path": "./output/Material-Theme-Darker.json"
-    }]
+        "label": "Palenight",
+        "uiTheme": "vs-dark",
+        "path": "./output/Material-Theme-Palenight.json"
+      },
+      {
+        "label": "Darker",
+        "uiTheme": "vs-dark",
+        "path": "./output/Material-Theme-Darker.json"
+      }
+    ]
   },
   "devDependencies": {
     "@types/node": "^7.0.10",
+    "eslint": "6.0.1",
     "typescript": "^2.2.1",
     "vscode-theme-generator": "*"
   }

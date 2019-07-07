@@ -1,9 +1,8 @@
 import * as path from "path";
 import { generateTheme, IColorSet } from "vscode-theme-generator";
-import * as Palenight from "./src/palenight";
-import * as Darker from "./src/darker";
+import * as Moxer from "./themes/moxer";
 
-const themes = [Palenight, Darker];
+const themes = [Moxer];
 
 themes.forEach(theme => {
   const colors = {
@@ -31,9 +30,13 @@ themes.forEach(theme => {
     base: {
       background: colors.ui.background,
       foreground: colors.base.white,
+      // Determines boolean, identifier, keyword, storage, and cssClass
       color1: colors.base.blue,
+      // Determines string, stringEscape, and cssId
       color2: colors.base.red,
+      // Determines function, class, classMember, type, and cssTag
       color3: colors.base.green,
+      // Determines functionCall and number
       color4: colors.base.yellow
     },
     terminal: {
@@ -59,6 +62,6 @@ themes.forEach(theme => {
   generateTheme(
     theme.name,
     colorSet,
-    path.join(__dirname, `output/${theme.name}.json`)
+    path.join(__dirname, `build/${theme.name}.json`)
   );
 });
