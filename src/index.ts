@@ -1,61 +1,79 @@
 import * as path from "path";
 import { generateTheme, IColorSet } from "vscode-theme-generator";
-import * as Moxer from "./themes/moxer";
+import * as Moxer from "./themes/moxer.js";
 
 const themes = [Moxer];
 
 themes.forEach(theme => {
-  const colors = {
-    ui: {
-      background: theme.ui.background
-    },
-    base: {
-      white: "#ffffff",
-      black: "#000000",
-      red: "#FF5370",
-      orange: "#F78C6C",
-      yellow: "#FFCB6B",
-      green: "#C3E88D",
-      cyan: "#89DDFF",
-      blue: "#82AAFF",
-      paleblue: "#B2CCD6",
-      purple: "#C792EA",
-      brown: "#C17E70",
-      pink: "#f07178",
-      violet: "#bb80b3"
-    }
-  };
-
   const colorSet: IColorSet = {
     base: {
-      background: colors.ui.background,
-      foreground: colors.base.white,
+      background: theme.ui.background,
+      foreground: theme.base.white,
       // Determines boolean, identifier, keyword, storage, and cssClass
-      color1: colors.base.blue,
+      color1: theme.base.red,
       // Determines string, stringEscape, and cssId
-      color2: colors.base.red,
+      color2: theme.base.green,
       // Determines function, class, classMember, type, and cssTag
-      color3: colors.base.green,
+      color3: theme.base.yellow,
       // Determines functionCall and number
-      color4: colors.base.yellow
+      color4: theme.base.paleBlue
     },
     terminal: {
-      blue: colors.base.blue,
-      brightBlue: colors.base.blue,
-      white: colors.base.white,
-      brightWhite: colors.base.white,
-      black: colors.base.black,
-      brightBlack: colors.base.black,
-      cyan: colors.base.cyan,
-      brightCyan: colors.base.cyan,
-      green: colors.base.green,
-      brightGreen: colors.base.green,
-      magenta: colors.base.purple,
-      brightMagenta: colors.base.purple,
-      red: colors.base.red,
-      brightRed: colors.base.red,
-      yellow: colors.base.yellow,
-      brightYellow: colors.base.yellow
+      blue: theme.base.blue,
+      brightBlue: theme.base.blue,
+      white: theme.base.white,
+      brightWhite: theme.base.white,
+      black: theme.base.black,
+      brightBlack: theme.base.black,
+      cyan: theme.base.cyan,
+      brightCyan: theme.base.cyan,
+      green: theme.base.green,
+      brightGreen: theme.base.green,
+      magenta: theme.base.purple,
+      brightMagenta: theme.base.purple,
+      red: theme.base.red,
+      brightRed: theme.base.red,
+      yellow: theme.base.yellow,
+      brightYellow: theme.base.yellow
+    },
+    syntax: {
+      comment: theme.ui.shade4,
+      cssClass: theme.base.yellow,
+      function: theme.ui.yellow,
+      class: theme.base.violet,
+      classMember: theme.base.red,
+      type: theme.base.violet,
+      cssTag: theme.base.yellow,
+      functionCall: theme.base.paleBlue,
+      identifier: theme.base.cyan,
+      string: theme.base.green,
+      stringEscape: theme.ui.foreground,
+      cssId: theme.base.orange,
+      // Determines boolean, identifier, keyword, storage, and cssClass
+      boolean: theme.base.red,
+      storage: theme.ui.foreground
+    },
+    overrides: {
+      "sideBar.background": theme.ui.background,
+      "sideBar.foreground": theme.ui.shade5,
+      "panel.background": theme.ui.background,
+      "panel.border": theme.ui.borders,
+      "editor.background": theme.ui.background,
+      "editor.foreground": theme.ui.foreground,
+      "activityBar.background": theme.ui.background,
+      "activityBar.border": theme.ui.borders,
+      "activityBar.foreground": theme.ui.foreground,
+      "scrollbarSlider.background": theme.ui.shade1,
+      "scrollbarSlider.hoverBackground": theme.ui.shade2,
+      "scrollbarSlider.activeBackground": theme.ui.shade4,
+      "tab.activeBorder": theme.ui.accent,
+      "tab.activeModifiedBorder": theme.ui.shade5,
+      "tab.unfocusedActiveBorder": theme.ui.shade4,
+      "tab.activeForeground": theme.base.white,
+      "tab.inactiveForeground": theme.ui.shade5,
+      "tab.inactiveBackground": theme.ui.background,
+      "tab.unfocusedActiveForeground": theme.ui.foreground,
+      "tab.border": theme.ui.background
     }
     // ui: {
     //   // the cursor color
