@@ -1,0 +1,14 @@
+*.log
+*.ts
+**/*.map
+.github
+.gitignore
+.vscode/**
+node_modules
+out/test/**
+src/**
+test/**
+tsconfig.json
+typings/**
+yarn.lock
+assets/
