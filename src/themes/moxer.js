@@ -2,7 +2,7 @@ module.exports = {
   name: "Moxer",
   type: "dark",
   ui: {
-    accent: "#00FFC2",
+    accent: "#fff017",
     background: "#090A0F",
     shade1: "#212431",
     shade2: "#2C303F",
@@ -11,7 +11,7 @@ module.exports = {
     shade5: "#555B77",
     shade6: "#6B7394",
     foreground: "#787FA1",
-    borders: "#0F0E18"
+    borders: "#090A0F"
   },
   base: {
     white: "#ffffff",
@@ -22,10 +22,10 @@ module.exports = {
     green: "#B2E4AE",
     cyan: "#81C5DA",
     blue: "#435AAD",
-    paleblue: "#79A7C8",
+    paleblue: "#7CA4C0",
     purple: "#6D6BA5",
     brown: "#946A52",
-    pink: "#A56B8E",
+    pink: "#D491B9",
     violet: "#A99BE2"
   }
 };

@@ -18,6 +18,10 @@ themes.forEach(theme => {
       // Determines functionCall and number
       color4: theme.base.paleBlue
     },
+    ui: {
+      cursor: theme.ui.yellow,
+      invisibles: theme.ui.shade2
+    },
     terminal: {
       blue: theme.base.blue,
       brightBlue: theme.base.blue,
@@ -39,41 +43,75 @@ themes.forEach(theme => {
     syntax: {
       comment: theme.ui.shade4,
       cssClass: theme.base.yellow,
+      identifier: theme.base.cyan,
+      keyword: theme.base.red,
+      boolean: theme.base.pink,
       function: theme.ui.yellow,
       class: theme.base.violet,
       classMember: theme.base.red,
       type: theme.base.violet,
       cssTag: theme.base.yellow,
       functionCall: theme.base.paleBlue,
-      identifier: theme.base.cyan,
       string: theme.base.green,
       stringEscape: theme.ui.foreground,
       cssId: theme.base.orange,
-      // Determines boolean, identifier, keyword, storage, and cssClass
-      boolean: theme.base.red,
       storage: theme.ui.foreground
     },
     overrides: {
+      focusBorder: theme.ui.foreground,
+      "widget.shadow": theme.ui.background + "00",
+      "scrollbar.shadow": theme.ui.background + "00",
+      "editorLink.activeForeground": theme.ui.foreground,
+      "selection.background": theme.base.paleblue + "50",
+      "progressBar.background": theme.base.yellow,
+
+      "button.background": theme.base.cyan,
+      "button.hoverBackground": theme.base.yellow,
+
+      "textLink.foreground": theme.base.cyan,
+      "textLink.activeForeground": theme.base.yellow,
+
       "sideBar.background": theme.ui.background,
-      "sideBar.foreground": theme.ui.shade5,
+      "sideBar.foreground": theme.ui.shade4,
+
       "panel.background": theme.ui.background,
       "panel.border": theme.ui.borders,
+
       "editor.background": theme.ui.background,
       "editor.foreground": theme.ui.foreground,
+      "editor.selectionBackground": theme.base.paleblue + "50",
+      "editor.selectionHighlightBackground": theme.base.red + "50",
+
+      "editorIndentGuide.background": theme.ui.shade1,
+      "editorIndentGuide.activeBackground": theme.ui.shade3,
+
+      "editorGroupHeader.tabsBackground": theme.ui.background,
+      "editorGroup.border": theme.ui.background,
+
+      "editorGutter.modifiedBackground": theme.base.blue + "60",
+      "editorGutter.addedBackground": theme.base.green + "60",
+      "editorGutter.deletedBackground": theme.base.red + "60",
+
       "activityBar.background": theme.ui.background,
       "activityBar.border": theme.ui.borders,
-      "activityBar.foreground": theme.ui.foreground,
+      "activityBar.foreground": theme.ui.shade4,
+
       "scrollbarSlider.background": theme.ui.shade1,
       "scrollbarSlider.hoverBackground": theme.ui.shade2,
       "scrollbarSlider.activeBackground": theme.ui.shade4,
-      "tab.activeBorder": theme.ui.accent,
+
+      "tab.activeBorder": theme.base.yellow,
       "tab.activeModifiedBorder": theme.ui.shade5,
       "tab.unfocusedActiveBorder": theme.ui.shade4,
       "tab.activeForeground": theme.base.white,
-      "tab.inactiveForeground": theme.ui.shade5,
+      "tab.inactiveForeground": theme.ui.shade3,
       "tab.inactiveBackground": theme.ui.background,
       "tab.unfocusedActiveForeground": theme.ui.foreground,
-      "tab.border": theme.ui.background
+      "tab.border": theme.ui.background,
+
+      "editorWidget.background": theme.ui.shade1,
+      "editorWidget.resizeBorder": theme.base.yellow,
+      "editorWidget.border": theme.base.yellow
     }
     // ui: {
     //   // the cursor color
