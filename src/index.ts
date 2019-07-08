@@ -64,6 +64,8 @@ themes.forEach(theme => {
       "editorLink.activeForeground": theme.ui.foreground,
       "selection.background": theme.base.paleblue + "50",
       "progressBar.background": theme.base.yellow,
+      "debugToolBar.background": theme.ui.background,
+      "pickerGroup.foreground": theme.base.yellow,
 
       "button.background": theme.base.cyan,
       "button.hoverBackground": theme.base.yellow,
@@ -85,6 +87,9 @@ themes.forEach(theme => {
       "editorIndentGuide.background": theme.ui.shade1,
       "editorIndentGuide.activeBackground": theme.ui.shade3,
 
+      "editorLineNumber.foreground": theme.ui.shade1,
+      "editorLineNumber.activeForeground": theme.base.cyan,
+
       "editorGroupHeader.tabsBackground": theme.ui.background,
       "editorGroup.border": theme.ui.background,
 
@@ -94,7 +99,7 @@ themes.forEach(theme => {
 
       "activityBar.background": theme.ui.background,
       "activityBar.border": theme.ui.borders,
-      "activityBar.foreground": theme.ui.shade4,
+      "activityBar.foreground": theme.ui.shade5,
 
       "scrollbarSlider.background": theme.ui.shade1,
       "scrollbarSlider.hoverBackground": theme.ui.shade2,
