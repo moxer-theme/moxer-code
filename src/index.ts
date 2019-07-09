@@ -98,6 +98,8 @@ themes.forEach(theme => {
 			"pickerGroup.foreground": theme.base.yellow,
 			"editorMarkerNavigation.background": theme.ui.foreground + "05",
 			"tree.indentGuidesStroke": theme.ui.shade1,
+			"terminalCursor.foreground": theme.base.yellow,
+			"terminalCursor.background": theme.base.black,
 			/**
 			 * Buttons style
 			 */
