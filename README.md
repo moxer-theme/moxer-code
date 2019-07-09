@@ -15,8 +15,7 @@
 - [Override theme colors](#Override-theme-colors)
 	- [Color Scheme override](#Color-Scheme-override)
 - [Recommended settings for a better experience](#Recommended-settings-for-a-better-experience)
-
-
+-
 ## Getting started
 
 You can install this awesome theme through the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Equinusocio.moxer-theme).
