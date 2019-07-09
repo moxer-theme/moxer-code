@@ -119,6 +119,7 @@ themes.forEach(theme => {
 			 */
 			"sideBarTitle.foreground": theme.ui.foreground,
 			"sideBarSectionHeader.background": theme.ui.background,
+			// "sideBarSectionHeader.foreground": theme.ui.foreground,
 			"sideBarSectionHeader.border": theme.ui.background,
 			/**
 			 * Window panels style (terminal, global search)
@@ -139,16 +140,16 @@ themes.forEach(theme => {
 			"editor.foreground": theme.ui.foreground,
 			"editor.lineHighlightBackground": theme.ui.background,
 			"editor.lineHighlightBorder": theme.ui.background,
-
+			// Editor Indent guides
 			"editorIndentGuide.background": theme.ui.shade1,
 			"editorIndentGuide.activeBackground": theme.ui.shade3,
-
+			// Editor line number
 			"editorLineNumber.foreground": theme.ui.shade3,
 			"editorLineNumber.activeForeground": theme.base.yellow,
-
+			// Editor tab groups
 			"editorGroupHeader.tabsBackground": theme.ui.background,
 			"editorGroup.border": theme.ui.background,
-
+			// Editor gutter
 			"editorGutter.modifiedBackground": theme.base.blue + "60",
 			"editorGutter.addedBackground": theme.base.green + "60",
 			"editorGutter.deletedBackground": theme.base.red + "60",
@@ -182,10 +183,13 @@ themes.forEach(theme => {
 			/**
 			 * Tabs style
 			 */
-			"tab.activeBorder": theme.base.yellow,
-			"tab.activeModifiedBorder": theme.ui.shade5,
+			"tab.activeBorder": theme.ui.background,
+			"tab.activeBorderTop": theme.base.cyan,
+			"tab.inactiveModifiedBorder": theme.ui.shade5,
+			"tab.activeModifiedBorder": theme.base.pink,
 			"tab.unfocusedActiveBorder": theme.ui.shade4,
 			"tab.activeForeground": theme.base.white,
+			"tab.activeBackground": theme.ui.background,
 			"tab.inactiveForeground": theme.ui.shade4,
 			"tab.inactiveBackground": theme.ui.background,
 			"tab.unfocusedActiveForeground": theme.ui.foreground,
@@ -247,7 +251,7 @@ themes.forEach(theme => {
 			 * Textfield and inputs style
 			 */
 			"input.background": theme.ui.background,
-			"input.foreground": theme.base.cyan,
+			"input.foreground": theme.base.pink,
 			"input.placeholderForeground": theme.ui.shade3,
 			"input.border": theme.ui.shade1,
 			/**
@@ -319,7 +323,41 @@ themes.forEach(theme => {
 			"breadcrumb.foreground": theme.ui.shade4,
 			"breadcrumb.focusForeground": theme.ui.foreground,
 			"breadcrumb.activeSelectionForeground": theme.base.pink,
-			"breadcrumbPicker.background": theme.ui.background
+			"breadcrumbPicker.background": theme.ui.background,
+			/**
+			 * Custom menus style
+			 */
+			"menu.background": theme.ui.shade1,
+			"menu.foreground": theme.ui.shade3,
+			"menu.selectionBackground": theme.ui.shade1,
+			"menu.selectionForeground": theme.ui.foreground,
+			"menu.selectionBorder": theme.ui.shade1,
+			"menu.separatorBackground": theme.ui.shade3,
+			/**
+			 * Menu Bar style
+			 */
+			"menubar.selectionBackground": theme.ui.shade1,
+			"menubar.selectionForeground": theme.ui.foreground,
+			"menubar.selectionBorder": theme.ui.shade1,
+			/**
+			 * Settings elements style
+			 */
+			"settings.dropdownForeground": theme.ui.foreground,
+			"settings.dropdownBackground": theme.ui.background,
+			"settings.numberInputForeground": theme.ui.foreground,
+			"settings.numberInputBackground": theme.ui.background,
+			"settings.textInputForeground": theme.ui.foreground,
+			"settings.textInputBackground": theme.ui.background,
+			"settings.headerForeground": theme.base.cyan,
+			"settings.modifiedItemIndicator": theme.base.pink,
+			"settings.checkboxBackground": theme.ui.background,
+			"settings.checkboxForeground": theme.ui.foreground,
+			/**
+			 * List Filter Widget style
+			 */
+			"listFilterWidget.background": theme.base.violet,
+			"listFilterWidget.outline": theme.base.violet,
+			"listFilterWidget.noMatchesOutline": theme.base.violet
 		}
 	};
 
