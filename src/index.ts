@@ -140,6 +140,10 @@ themes.forEach(theme => {
 			"editor.foreground": theme.ui.foreground,
 			"editor.lineHighlightBackground": theme.ui.background,
 			"editor.lineHighlightBorder": theme.ui.background,
+			"editor.findMatchBackground": theme.ui.background + "00",
+			"editor.findMatchHighlightBackground": theme.ui.background + "00",
+			"editor.findMatchBorder": theme.base.pink,
+			"editor.findMatchHighlightBorder": theme.ui.shade6,
 			// Editor Indent guides
 			"editorIndentGuide.background": theme.ui.shade1,
 			"editorIndentGuide.activeBackground": theme.ui.shade3,
@@ -223,7 +227,7 @@ themes.forEach(theme => {
 			/**
 			 * Editor Overview Ruler style
 			 */
-			"editorOverviewRuler.findMatchForeground": theme.base.yellow,
+			"editorOverviewRuler.findMatchForeground": theme.base.pink,
 			"editorOverviewRuler.border": theme.ui.borders,
 			"editorOverviewRuler.errorForeground": theme.base.red,
 			"editorOverviewRuler.infoForeground": theme.base.blue,
