@@ -140,8 +140,8 @@ themes.forEach(theme => {
 			 */
 			"editor.background": theme.ui.background,
 			"editor.foreground": theme.ui.foreground,
-			"editor.lineHighlightBackground": theme.ui.background,
-			"editor.lineHighlightBorder": theme.ui.background,
+			"editor.lineHighlightBackground": theme.ui.shade1 + "50",
+			"editor.lineHighlightBorder": theme.ui.shade1 + "00",
 			"editor.findMatchBackground": theme.ui.background + "00",
 			"editor.findMatchHighlightBackground": theme.ui.background + "00",
 			"editor.findMatchBorder": theme.base.pink,
