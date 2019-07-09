@@ -432,7 +432,7 @@
     "textLink.activeForeground": "#F5DFA5",
     "sideBar.foreground": "#3F445A",
     "sideBar.border": "#212431",
-    "sideBarTitle.foreground": "#8E95B4",
+    "sideBarTitle.foreground": "#3F445A",
     "sideBarSectionHeader.border": "#090A0F",
     "panel.dropBackground": "#2C303F",
     "panelTitle.activeForeground": "#ffffff",
