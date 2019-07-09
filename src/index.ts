@@ -181,7 +181,7 @@ themes.forEach(theme => {
 			/**
 			 * Scrollbar style
 			 */
-			"scrollbarSlider.background": theme.ui.shade1,
+			"scrollbarSlider.background": theme.ui.shade4 + "50",
 			"scrollbarSlider.hoverBackground": theme.ui.shade2,
 			"scrollbarSlider.activeBackground": theme.ui.shade4,
 			/**
@@ -279,7 +279,7 @@ themes.forEach(theme => {
 			"list.inactiveSelectionForeground": theme.base.cyan,
 			"list.inactiveSelectionBackground": theme.ui.shade1 + "70",
 			"list.focusBackground": theme.ui.shade1,
-			"list.focusForeground": theme.ui.foreground,
+			"list.focusForeground": theme.base.white,
 			"list.highlightForeground": theme.base.cyan,
 			/**
 			 * Editor suggest widget style
