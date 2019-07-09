@@ -212,7 +212,7 @@ themes.forEach(theme => {
 			/**
 			 * Statusbar items style
 			 */
-			"statusBarItem.hoverBackground": theme.ui.shade1,
+			"statusBarItem.hoverBackground": theme.ui.shade1 + "50",
 			"statusBarItem.remoteForeground": theme.base.black,
 			"statusBarItem.remoteBackground": theme.base.yellow,
 			/**
