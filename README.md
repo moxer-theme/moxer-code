@@ -10,15 +10,17 @@
 
 - [Getting started](#Getting-started)
 	- [Installation](#Installation)
-			- [GitHub Repository Clone](#GitHub-Repository-Clone)
+		- [GitHub Repository Clone](#GitHub-Repository-Clone)
 - [Activate theme](#Activate-theme)
 - [Override theme colors](#Override-theme-colors)
 	- [Color Scheme override](#Color-Scheme-override)
 - [Recommended settings for a better experience](#Recommended-settings-for-a-better-experience)
--
+
 ## Getting started
 
 You can install this awesome theme through the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Equinusocio.moxer-theme).
+
+<p align="center"><img width="800px" src="https://raw.githubusercontent.com/moxer-theme/moxer-code/master/assets/screen.png"></p>
 
 ### Installation
 
@@ -33,7 +35,7 @@ Paste the following command and press `Enter`:
 ext install moxer
 ```
 
-##### GitHub Repository Clone
+#### GitHub Repository Clone
 
 Change to your `.vscode/extensions` [VS Code extensions directory](https://code.visualstudio.com/docs/extensions/install-extension#_side-loading).
 Depending on your platform it is located in the following folders:

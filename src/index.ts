@@ -119,7 +119,7 @@ themes.forEach(theme => {
 			/**
 			 * Sidebar elements style
 			 */
-			"sideBarTitle.foreground": theme.ui.foreground,
+			"sideBarTitle.foreground": theme.ui.shade4,
 			"sideBarSectionHeader.background": theme.ui.background,
 			// "sideBarSectionHeader.foreground": theme.ui.foreground,
 			"sideBarSectionHeader.border": theme.ui.background,

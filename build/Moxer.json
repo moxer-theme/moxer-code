@@ -425,6 +425,8 @@
     "progressBar.background": "#F5DFA5",
     "pickerGroup.foreground": "#F5DFA5",
     "tree.indentGuidesStroke": "#212431",
+    "terminalCursor.foreground": "#F5DFA5",
+    "terminalCursor.background": "#000000",
     "button.hoverBackground": "#2C303F",
     "textLink.foreground": "#81C5DA",
     "textLink.activeForeground": "#F5DFA5",
