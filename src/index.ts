@@ -1,8 +1,9 @@
 import * as path from "path";
 import { generateTheme, IColorSet } from "vscode-theme-generator";
 import * as Moxer from "./themes/moxer.js";
+import * as MoxerBorderline from "./themes/moxer-borderline";
 
-const themes = [Moxer];
+const themes = [Moxer, MoxerBorderline];
 
 themes.forEach(theme => {
 	const colorSet: IColorSet = {
@@ -95,6 +96,8 @@ themes.forEach(theme => {
 			"progressBar.background": theme.base.yellow,
 			"debugToolBar.background": theme.ui.background,
 			"pickerGroup.foreground": theme.base.yellow,
+			"editorMarkerNavigation.background": theme.ui.foreground + "05",
+			"tree.indentGuidesStroke": theme.ui.shade1,
 			/**
 			 * Buttons style
 			 */
@@ -110,17 +113,25 @@ themes.forEach(theme => {
 			 */
 			"sideBar.background": theme.ui.background,
 			"sideBar.foreground": theme.ui.shade4,
+			"sideBar.border": theme.ui.borders,
 			/**
 			 * Sidebar elements style
 			 */
 			"sideBarTitle.foreground": theme.ui.foreground,
 			"sideBarSectionHeader.background": theme.ui.background,
-			"sideBarSectionHeader.border": theme.ui.borders,
+			"sideBarSectionHeader.border": theme.ui.background,
 			/**
 			 * Window panels style (terminal, global search)
 			 */
 			"panel.background": theme.ui.background,
 			"panel.border": theme.ui.borders,
+			"panel.dropBackground": theme.ui.shade2,
+			/**
+			 * Window panels elements style
+			 */
+			"panelTitle.inactiveForeground": theme.ui.shade4,
+			"panelTitle.activeForeground": theme.base.white,
+			"panelTitle.activeBorder": theme.base.yellow,
 			/**
 			 * Code Editor style
 			 */
@@ -145,13 +156,23 @@ themes.forEach(theme => {
 			 * Activity bar style
 			 */
 			"activityBar.background": theme.ui.background,
-			"activityBar.border": theme.ui.borders,
+			"activityBar.border": theme.ui.background,
 			"activityBar.foreground": theme.ui.shade5,
 			/**
 			 * Activity bar badges style
 			 */
 			"activityBarBadge.background": theme.base.cyan,
 			"activityBarBadge.foreground": theme.ui.background,
+			/**
+			 * Global badges style
+			 */
+			"badge.background": theme.base.cyan,
+			"badge.foreground": theme.ui.background,
+			/**
+			 * Extensions badge style
+			 */
+			"extensionBadge.remoteBackground": theme.base.shade3,
+			"extensionBadge.remoteForeground": theme.base.foreground,
 			/**
 			 * Scrollbar style
 			 */
@@ -225,16 +246,80 @@ themes.forEach(theme => {
 			/**
 			 * Textfield and inputs style
 			 */
-			"input.background": theme.ui.shade3,
-			"input.foreground": theme.ui.foreground,
-			"input.placeholderForeground": theme.ui.shade6,
-			"input.border": theme.ui.shade3,
+			"input.background": theme.ui.background,
+			"input.foreground": theme.base.cyan,
+			"input.placeholderForeground": theme.ui.shade3,
+			"input.border": theme.ui.shade1,
 			/**
 			 * Inputs validation style
 			 */
 			"inputValidation.errorBorder": theme.base.red + "50",
 			"inputValidation.infoBorder": theme.base.blue + "50",
-			"inputValidation.warningBorder": theme.base.yellow + "50"
+			"inputValidation.warningBorder": theme.base.yellow + "50",
+			/**
+			 * Dropdown menu style
+			 */
+			"dropdown.background": theme.ui.shade1,
+			"dropdown.border": theme.ui.shade1,
+			/**
+			 * Lists style
+			 */
+			"list.hoverForeground": theme.ui.foreground,
+			"list.hoverBackground": theme.ui.background + "00",
+			"list.activeSelectionBackground": theme.ui.background + "00",
+			"list.activeSelectionForeground": theme.base.cyan,
+			"list.inactiveSelectionForeground": theme.base.cyan,
+			"list.inactiveSelectionBackground": theme.ui.shade1 + "70",
+			"list.focusBackground": theme.ui.shade1,
+			"list.focusForeground": theme.ui.foreground,
+			"list.highlightForeground": theme.base.cyan,
+			/**
+			 * Editor suggest widget style
+			 */
+			"editorSuggestWidget.background": theme.ui.shade1,
+			"editorSuggestWidget.foreground": theme.ui.foreground,
+			"editorSuggestWidget.highlightForeground": theme.base.cyan,
+			"editorSuggestWidget.selectedBackground": theme.ui.shade2,
+			"editorSuggestWidget.border": theme.ui.shade1,
+			/**
+			 * Editor diff editor style
+			 */
+			"diffEditor.insertedTextBackground": theme.base.cyan + "20",
+			"diffEditor.removedTextBackground": theme.base.pink + "20",
+			/**
+			 * Extensions button style
+			 */
+			"extensionButton.prominentBackground": theme.base.yellow,
+			"extensionButton.prominentHoverBackground": theme.base.yellow,
+			"extensionButton.prominentForeground": theme.ui.background,
+			/**
+			 * Peekview window style
+			 */
+			"peekViewEditor.background": theme.ui.background,
+			"peekViewResult.background": theme.ui.background,
+			"peekView.border": theme.ui.shade1,
+			"peekViewTitle.background": theme.ui.shade1,
+			"peekViewEditorGutter.background": theme.ui.background,
+			"peekViewTitleDescription.foreground": theme.ui.foreground,
+			"peekViewResult.matchHighlightBackground": theme.base.pink + "50",
+			"peekViewEditor.matchHighlightBackground": theme.base.pink + "50",
+			"peekViewResult.selectionBackground": theme.ui.shade1,
+			/**
+			 * GIT decorations style
+			 */
+			"gitDecoration.deletedResourceForeground": theme.base.red,
+			"gitDecoration.conflictingResourceForeground": theme.base.yellow,
+			"gitDecoration.modifiedResourceForeground": theme.base.blue,
+			"gitDecoration.untrackedResourceForeground": theme.base.green,
+			"gitDecoration.ignoredResourceForeground": theme.ui.shade1,
+			/**
+			 * Breadcrumb style
+			 */
+			"breadcrumb.background": theme.ui.background,
+			"breadcrumb.foreground": theme.ui.shade4,
+			"breadcrumb.focusForeground": theme.ui.foreground,
+			"breadcrumb.activeSelectionForeground": theme.base.pink,
+			"breadcrumbPicker.background": theme.ui.background
 		}
 	};
 

@@ -1,11 +1,11 @@
 module.exports = {
-	name: "Moxer",
+	name: "Moxer-Borderline",
 	type: "dark",
 	ui: {
 		accent: "#fff017",
 		background: "#090A0F",
 		foreground: "#8E95B4",
-		borders: "#090A0F",
+		borders: "#212431",
 		shade1: "#212431",
 		shade2: "#2C303F",
 		shade3: "#35394B",

@@ -1,57 +1,61 @@
 {
-  "name": "moxer-theme",
-  "displayName": "Moxer Theme",
-  "publisher": "Equinusocio",
-  "description": "From the Material Theme authors.. Moxer is here to brings your DX to another level.",
-  "version": "0.2.0",
-  "preview": true,
-  "license": "Apache-2.0",
-  "author": "Mattia Astorino [@equinusocio]",
-  "icon": "logo.png",
-  "galleryBanner": {
-    "color": "#090A0F",
-    "theme": "dark"
-  },
-  "homepage": "https://github.com/moxer-theme/moxer-code",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/moxer-theme/moxer-code.git"
-  },
-  "bugs": {
-    "url": "https://github.com/moxer-theme/moxer-code/issues"
-  },
-  "scripts": {
-    "prestart": "tsc src/index.ts",
-    "start": "node src/index.js"
-  },
-  "engines": {
-    "vscode": "^1.36.0"
-  },
-  "categories": [
-    "Themes",
-    "Other"
-  ],
-  "keywords": [
-    "VSCode",
-    "Themes",
-    "moxer",
-    "theme",
-    "equinusocio"
-  ],
-  "extensionKind": "ui",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Moxer",
-        "uiTheme": "vs-dark",
-        "path": "./build/Moxer.json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "@types/node": "^7.0.10",
-    "eslint": "6.0.1",
-    "typescript": "^2.2.1",
-    "vscode-theme-generator": "*"
-  }
+	"name": "moxer-theme",
+	"displayName": "Moxer Theme",
+	"publisher": "Equinusocio",
+	"description": "From the Material Theme authors.. Moxer is here to brings your DX to another level.",
+	"version": "0.2.0",
+	"preview": true,
+	"license": "Apache-2.0",
+	"author": "Mattia Astorino [@equinusocio]",
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#090A0F",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/moxer-theme/moxer-code",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/moxer-theme/moxer-code.git"
+	},
+	"bugs": {
+		"url": "https://github.com/moxer-theme/moxer-code/issues"
+	},
+	"scripts": {
+		"prestart": "tsc src/index.ts",
+		"start": "node src/index.js"
+	},
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes",
+		"moxer",
+		"theme",
+		"equinusocio"
+	],
+	"extensionKind": "ui",
+	"contributes": {
+		"themes": [{
+				"label": "Moxer",
+				"uiTheme": "vs-dark",
+				"path": "./build/Moxer.json"
+			},
+			{
+				"label": "Moxer Borderline",
+				"uiTheme": "vs-dark",
+				"path": "./build/Moxer-Borderline.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^7.0.10",
+		"eslint": "6.0.1",
+		"typescript": "^2.2.1",
+		"vscode-theme-generator": "*"
+	}
 }
