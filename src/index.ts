@@ -1,7 +1,7 @@
 import * as path from "path";
-import { generateTheme, IColorSet } from "vscode-theme-generator";
 import * as Moxer from "./themes/moxer.js";
 import * as MoxerBorderline from "./themes/moxer-borderline";
+import { generateTheme, IColorSet } from "vscode-theme-generator";
 
 const themes = [Moxer, MoxerBorderline];
 
@@ -279,7 +279,7 @@ themes.forEach(theme => {
 			"list.activeSelectionBackground": theme.ui.background + "00",
 			"list.activeSelectionForeground": theme.base.cyan,
 			"list.inactiveSelectionForeground": theme.base.cyan,
-			"list.inactiveSelectionBackground": theme.ui.shade1 + "70",
+			"list.inactiveSelectionBackground": theme.ui.shade1 + "50",
 			"list.focusBackground": theme.ui.shade1,
 			"list.focusForeground": theme.base.white,
 			"list.highlightForeground": theme.base.cyan,
@@ -367,6 +367,10 @@ themes.forEach(theme => {
 		}
 	};
 
+	/**
+	 * Call the theme generator for each
+	 * theme found in `themes`
+	 */
 	generateTheme(
 		theme.name,
 		colorSet,
