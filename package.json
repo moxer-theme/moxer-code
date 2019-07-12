@@ -41,7 +41,8 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [{
+		"themes": [
+			{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
@@ -58,6 +59,7 @@
 		"eslint": "6.0.1",
 		"eslint-config-prettier": "6.0.0",
 		"eslint-plugin-prettier": "3.1.0",
+		"fs-extra": "8.1.0",
 		"prettier": "1.18.2",
 		"typescript": "^2.2.1",
 		"vscode-theme-generator": "0.1.5"

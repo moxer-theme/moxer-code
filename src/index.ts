@@ -1,10 +1,27 @@
+import * as fs from 'fs-extra';
 import * as path from 'path';
 import Moxer from './themes/moxer.js';
 import MoxerBorderline from './themes/moxer-borderline';
 import { generateTheme, IColorSet } from 'vscode-theme-generator';
 
-const themes = [Moxer, MoxerBorderline];
+/**
+ * Define paths
+ */
+const buildPath: string = path.join(__dirname, '../build'),
+	themes = [Moxer, MoxerBorderline];
 
+/**
+ * Checl if the build folder exist.
+ * If not, create it.
+ */
+if (!fs.existsSync(buildPath)) {
+	fs.mkdirSync(buildPath);
+}
+
+/**
+ * Generate a [theme-name].json for each
+ * theme file found inside src/themes
+ */
 themes.forEach(theme => {
 	const colorSet: IColorSet = {
 		base: {
@@ -78,7 +95,7 @@ themes.forEach(theme => {
 			classMember: theme.base.red,
 			type: theme.base.violet,
 			cssTag: theme.base.yellow,
-			functionCall: theme.base.paleblue,
+			functionCall: theme.base.pink,
 			string: theme.base.green,
 			stringEscape: theme.ui.foreground,
 			cssId: theme.base.orange,
