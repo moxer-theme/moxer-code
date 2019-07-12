@@ -115,7 +115,7 @@ themes.forEach(theme => {
 			 */
 			"sideBar.background": theme.ui.background,
 			"sideBar.foreground": theme.ui.shade4,
-			"sideBar.border": theme.ui.borders,
+			"sideBar.border": theme.ui.shade2 + "50",
 			/**
 			 * Sidebar elements style
 			 */
