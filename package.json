@@ -20,7 +20,7 @@
 		"url": "https://github.com/moxer-theme/moxer-code/issues"
 	},
 	"scripts": {
-		"lint": "prettier --write 'src/**/*.ts'",
+		"lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
 		"precommit": "yarn lint",
 		"prestart": "tsc src/index.ts",
 		"start": "node src/index.js"
@@ -41,8 +41,7 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [
-			{
+		"themes": [{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
@@ -57,11 +56,13 @@
 	"devDependencies": {
 		"@types/node": "^7.0.10",
 		"eslint": "6.0.1",
-		"eslint-config-prettier": "6.0.0",
-		"eslint-plugin-prettier": "3.1.0",
+		"tslint": "5.18.0",
+		"tslint-config-prettier": "1.18.0",
+		"typescript": "^2.2.1"
+	},
+	"dependencies": {
+		"vscode-theme-generator": "0.1.5",
 		"fs-extra": "8.1.0",
-		"prettier": "1.18.2",
-		"typescript": "^2.2.1",
-		"vscode-theme-generator": "0.1.5"
+		"prettier": "1.18.2"
 	}
 }

@@ -1,14 +1,14 @@
 import * as fs from 'fs-extra';
 import * as path from 'path';
-import Moxer from './themes/moxer.js';
-import MoxerBorderline from './themes/moxer-borderline';
 import { generateTheme, IColorSet } from 'vscode-theme-generator';
+import MoxerBorderline from './themes/moxer-borderline';
+import Moxer from './themes/moxer.js';
 
 /**
  * Define paths
  */
-const buildPath: string = path.join(__dirname, '../build'),
-	themes = [Moxer, MoxerBorderline];
+const buildPath: string = path.join(__dirname, '../build');
+const themes: any[] = [Moxer, MoxerBorderline];
 
 /**
  * Checl if the build folder exist.
@@ -27,8 +27,6 @@ themes.forEach(theme => {
 		base: {
 			// Determines the overall background color
 			background: theme.ui.background,
-			// Determines the overall text foreground color
-			foreground: theme.base.white,
 			// Determines boolean, identifier, keyword, storage, and cssClass
 			color1: theme.base.red,
 			// Determines string, stringEscape, and cssId
@@ -36,71 +34,13 @@ themes.forEach(theme => {
 			// Determines function, class, classMember, type, and cssTag
 			color3: theme.base.yellow,
 			// Determines functionCall and number
-			color4: theme.base.paleblue
+			color4: theme.base.paleblue,
+			// Determines the overall text foreground color
+			foreground: theme.base.white
 		},
 		/**
-		 * Define the integrated shell
-		 * color palette
+		 * Overrides workbench UI Elements
 		 */
-		terminal: {
-			blue: theme.base.blue,
-			brightBlue: theme.base.blue,
-			white: theme.base.white,
-			brightWhite: theme.base.white,
-			black: theme.ui.shade3,
-			brightBlack: theme.ui.shade3,
-			cyan: theme.base.cyan,
-			brightCyan: theme.base.cyan,
-			green: theme.base.green,
-			brightGreen: theme.base.green,
-			magenta: theme.base.purple,
-			brightMagenta: theme.base.purple,
-			red: theme.base.red,
-			brightRed: theme.base.red,
-			yellow: theme.base.yellow,
-			brightYellow: theme.base.yellow
-		},
-		ui: {
-			// set the editor cursor color
-			cursor: theme.base.yellow,
-			// set color for invisible characters/whitespaces
-			invisibles: theme.ui.shade1,
-			// highlights text which matches the selected text
-			selection: theme.ui.shade1,
-			// highlights text inside selected area
-			selectionHighlight: theme.base.yellow + '50',
-			// ighlights matches from the find widge
-			findMatchHighlight: theme.base.pink,
-			// highlights matches from the find widget
-			currentFindMatchHighlight: theme.ui.shade5,
-			// highlights the selected area for "find in selection"
-			findRangeHighlight: theme.base.yellow + '30',
-			// when the cursor is on a symbol, highlights places that symbol is read
-			wordHighlight: theme.base.pink + '30',
-			// when the cursor is on a symbol, highlights places that symbol is written
-			wordHighlightStrong: theme.base.green + '30'
-		},
-		/**
-		 * Overrides specific syntax scopes provided
-		 * by the theme generator
-		 */
-		syntax: {
-			comment: theme.ui.shade4,
-			cssClass: theme.base.yellow,
-			identifier: theme.base.cyan,
-			keyword: theme.base.red,
-			boolean: theme.base.pink,
-			function: theme.base.yellow,
-			class: theme.base.violet,
-			classMember: theme.base.red,
-			type: theme.base.pink,
-			cssTag: theme.base.yellow,
-			functionCall: theme.base.violet,
-			string: theme.base.green,
-			stringEscape: theme.ui.foreground,
-			cssId: theme.base.orange,
-			storage: theme.ui.foreground
-		},
 		overrides: {
 			/**
 			 * General elements style
@@ -381,6 +321,69 @@ themes.forEach(theme => {
 			'listFilterWidget.background': theme.base.violet,
 			'listFilterWidget.outline': theme.base.violet,
 			'listFilterWidget.noMatchesOutline': theme.base.violet
+		},
+		/**
+		 * Overrides specific syntax scopes provided
+		 * by the theme generator
+		 */
+		syntax: {
+			boolean: theme.base.pink,
+			class: theme.base.violet,
+			classMember: theme.base.red,
+			comment: theme.ui.shade4,
+			cssClass: theme.base.yellow,
+			cssId: theme.base.orange,
+			cssTag: theme.base.yellow,
+			function: theme.base.yellow,
+			functionCall: theme.base.violet,
+			identifier: theme.base.cyan,
+			keyword: theme.base.red,
+			storage: theme.ui.foreground,
+			string: theme.base.green,
+			stringEscape: theme.ui.foreground,
+			type: theme.base.pink
+		},
+		/**
+		 * Define the integrated shell
+		 * color palette
+		 */
+		terminal: {
+			black: theme.ui.shade3,
+			blue: theme.base.blue,
+			brightBlack: theme.ui.shade3,
+			brightBlue: theme.base.blue,
+			brightCyan: theme.base.cyan,
+			brightGreen: theme.base.green,
+			brightMagenta: theme.base.purple,
+			brightRed: theme.base.red,
+			brightWhite: theme.base.white,
+			brightYellow: theme.base.yellow,
+			cyan: theme.base.cyan,
+			green: theme.base.green,
+			magenta: theme.base.purple,
+			red: theme.base.red,
+			white: theme.base.white,
+			yellow: theme.base.yellow
+		},
+		ui: {
+			// highlights matches from the find widget
+			currentFindMatchHighlight: theme.ui.shade5,
+			// set the editor cursor color
+			cursor: theme.base.yellow,
+			// ighlights matches from the find widge
+			findMatchHighlight: theme.base.pink,
+			// highlights the selected area for "find in selection"
+			findRangeHighlight: theme.base.yellow + '30',
+			// set color for invisible characters/whitespaces
+			invisibles: theme.ui.shade1,
+			// highlights text which matches the selected text
+			selection: theme.ui.shade1,
+			// highlights text inside selected area
+			selectionHighlight: theme.base.yellow + '50',
+			// when the cursor is on a symbol, highlights places that symbol is read
+			wordHighlight: theme.base.pink + '30',
+			// when the cursor is on a symbol, highlights places that symbol is written
+			wordHighlightStrong: theme.base.green + '30'
 		}
 	};
 
