@@ -448,6 +448,8 @@
     "editorGutter.deletedBackground": "#D46C6C60",
     "activityBar.border": "#090A0F",
     "activityBar.foreground": "#555B77",
+    "extensionBadge.remoteBackground": "#35394B",
+    "extensionBadge.remoteForeground": "#8E95B4",
     "scrollbarSlider.background": "#3F445A50",
     "scrollbarSlider.hoverBackground": "#2C303F",
     "scrollbarSlider.activeBackground": "#3F445A",

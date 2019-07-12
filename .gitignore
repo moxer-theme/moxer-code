@@ -1,5 +1,5 @@
 # Custom
-index.js
+src/**/*.js
 
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,intellij,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,linux,macos,windows,intellij,visualstudiocode
