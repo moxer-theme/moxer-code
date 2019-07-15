@@ -19,7 +19,7 @@ export default {
 	ui: {
 		accent: '#fff017',
 		background: '#090A0F',
-		borders: '#212431',
+		borders: '#2C303F50',
 		foreground: '#8E95B4',
 		shade1: '#212431',
 		shade2: '#2C303F',
