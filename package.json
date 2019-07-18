@@ -19,6 +19,9 @@
 	"bugs": {
 		"url": "https://github.com/moxer-theme/moxer-code/issues"
 	},
+	"extensionPack": [
+		"equinusocio.moxer-icons"
+	],
 	"scripts": {
 		"lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
 		"precommit": "yarn lint",

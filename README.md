@@ -80,7 +80,6 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 ```js
 "editor.tokenColorCustomizations": {
     "[Moxer]": {
-        "sideBar.background": "#347890",
         "textMateRules": [
             {
                 "scope": [
@@ -95,6 +94,12 @@ You can override the theme UI and schemes colors by adding these theme-specific 
             }
         ]
     },
+},
+
+"workbench.colorCustomizations": {
+	"[Moxer]": {
+		"sideBar.background": "#ff0000",
+	}
 },
 ```
 

@@ -240,6 +240,7 @@ themes.forEach(theme => {
 			'list.focusBackground': theme.ui.shade1,
 			'list.focusForeground': theme.base.white,
 			'list.highlightForeground': theme.base.cyan,
+			'list.dropBackground': theme.ui.shade2,
 			/**
 			 * Editor suggest widget style
 			 */
