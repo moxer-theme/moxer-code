@@ -368,6 +368,9 @@ themes.forEach(theme => {
 			white: theme.base.white,
 			yellow: theme.base.yellow
 		},
+		/**
+		 * Define workbench colors
+		 */
 		ui: {
 			// highlights matches from the find widget
 			currentFindMatchHighlight: theme.ui.shade5,
@@ -388,6 +391,9 @@ themes.forEach(theme => {
 			// when the cursor is on a symbol, highlights places that symbol is written
 			wordHighlightStrong: theme.base.green + '30'
 		},
+		/**
+		 * Override all syntax tokens
+		 */
 		syntaxOverrides: [
 			{
 				name: 'String, Symbols, Inherited Class, Markup Heading',
