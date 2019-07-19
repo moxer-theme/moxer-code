@@ -396,19 +396,12 @@ themes.forEach(theme => {
 		 */
 		syntaxOverrides: [
 			{
-				name: 'String, Symbols, Inherited Class, Markup Heading',
-				scope: [
-					'string',
-					'constant.other.symbol',
-					'constant.other.key',
-					'entity.other.inherited-class',
-					'markup.heading',
-					'markup.inserted.git_gutter',
-					'meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js'
-				],
+				name: '',
+				scope: [''],
 				settings: {
-					fontStyle: 'normal',
-					foreground: '#ff00ff'
+					fontStyle: '',
+					foreground: '',
+					background: ''
 				}
 			}
 		]

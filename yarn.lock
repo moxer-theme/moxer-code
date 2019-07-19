@@ -874,7 +874,7 @@ uri-js@^4.2.2:
 
 "vscode-theme-generator@git+https://git@github.com/moxer-theme/vscode-theme-generator.git":
   version "0.1.5"
-  resolved "git+https://git@github.com/moxer-theme/vscode-theme-generator.git#2946c097fd8429ca12015b8ebb3b001f26de46ef"
+  resolved "git+https://git@github.com/moxer-theme/vscode-theme-generator.git#904394245941a29d05d97fc5fe31b5ad1aecc13a"
 
 which@^1.2.9:
   version "1.3.1"
