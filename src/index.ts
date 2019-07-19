@@ -1,8 +1,10 @@
 import * as fs from 'fs-extra';
 import * as path from 'path';
-import { generateTheme, IColorSet } from 'vscode-theme-generator';
 import MoxerBorderline from './themes/moxer-borderline';
 import Moxer from './themes/moxer.js';
+
+// tslint:disable-next-line: no-submodule-imports
+import { generateTheme, IColorSet } from 'vscode-theme-generator/dist';
 
 /**
  * Define paths
@@ -385,7 +387,25 @@ themes.forEach(theme => {
 			wordHighlight: theme.base.pink + '30',
 			// when the cursor is on a symbol, highlights places that symbol is written
 			wordHighlightStrong: theme.base.green + '30'
-		}
+		},
+		syntaxOverrides: [
+			{
+				name: 'String, Symbols, Inherited Class, Markup Heading',
+				scope: [
+					'string',
+					'constant.other.symbol',
+					'constant.other.key',
+					'entity.other.inherited-class',
+					'markup.heading',
+					'markup.inserted.git_gutter',
+					'meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js'
+				],
+				settings: {
+					fontStyle: 'normal',
+					foreground: '#ff00ff'
+				}
+			}
+		]
 	};
 
 	/**
