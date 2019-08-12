@@ -226,6 +226,11 @@ themes.forEach(theme => {
 			'inputValidation.infoBorder': theme.base.blue + '50',
 			'inputValidation.warningBorder': theme.base.yellow + '50',
 			/**
+			 * Input toggle buttons
+			 */
+			'inputOption.activeBackground': theme.ui.shade2,
+			'inputOption.activeBorder': theme.ui.shade3,
+			/**
 			 * Dropdown menu style
 			 */
 			'dropdown.background': theme.ui.shade1,
