@@ -44,8 +44,7 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [
-			{
+		"themes": [{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
