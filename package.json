@@ -3,7 +3,7 @@
 	"displayName": "Moxer Theme",
 	"publisher": "Equinusocio",
 	"description": "From the Material Theme authors...Moxer is here to brings your DX to another level.",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"license": "Apache-2.0",
 	"author": "Mattia Astorino [@equinusocio]",
 	"icon": "logo.png",
@@ -44,7 +44,8 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [{
+		"themes": [
+			{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
