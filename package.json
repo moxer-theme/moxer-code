@@ -44,8 +44,7 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [
-			{
+		"themes": [{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
@@ -62,11 +61,11 @@
 		"eslint": "6.0.1",
 		"tslint": "5.18.0",
 		"tslint-config-prettier": "1.18.0",
-		"typescript": "^2.2.1"
+		"typescript": "^2.2.1",
+		"vscode-theme-generator": "git+https://git@github.com/moxer-theme/vscode-theme-generator.git"
 	},
 	"dependencies": {
 		"fs-extra": "8.1.0",
-		"prettier": "1.18.2",
-		"vscode-theme-generator": "git+https://git@github.com/moxer-theme/vscode-theme-generator.git"
+		"prettier": "1.18.2"
 	}
 }
