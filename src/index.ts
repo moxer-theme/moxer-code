@@ -4,7 +4,7 @@ import MoxerBorderline from './themes/moxer-borderline';
 import Moxer from './themes/moxer.js';
 
 // tslint:disable-next-line: no-submodule-imports
-import { generateTheme, IColorSet } from 'vscode-theme-generator/dist';
+import { generateTheme, IColorSet } from '@moxer/vscode-theme-generator';
 
 /**
  * Define paths
@@ -226,11 +226,6 @@ themes.forEach(theme => {
 			'inputValidation.infoBorder': theme.base.blue + '50',
 			'inputValidation.warningBorder': theme.base.yellow + '50',
 			/**
-			 * Input toggle buttons
-			 */
-			'inputOption.activeBackground': theme.ui.shade2,
-			'inputOption.activeBorder': theme.ui.shade3,
-			/**
 			 * Dropdown menu style
 			 */
 			'dropdown.background': theme.ui.shade1,
@@ -399,17 +394,7 @@ themes.forEach(theme => {
 		/**
 		 * Override all syntax tokens
 		 */
-		syntaxOverrides: [
-			{
-				name: '',
-				scope: [''],
-				settings: {
-					fontStyle: '',
-					foreground: '',
-					background: ''
-				}
-			}
-		]
+
 	};
 
 	/**

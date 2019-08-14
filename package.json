@@ -29,7 +29,8 @@
 		"start": "node src/index.js"
 	},
 	"engines": {
-		"vscode": "^1.36.0"
+		"node": "^11.0.0",
+		"vscode": "^1.37.0"
 	},
 	"categories": [
 		"Themes",
@@ -44,8 +45,7 @@
 	],
 	"extensionKind": "ui",
 	"contributes": {
-		"themes": [
-			{
+		"themes": [{
 				"label": "Moxer",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer.json"
@@ -58,12 +58,12 @@
 		]
 	},
 	"devDependencies": {
+		"@moxer/vscode-theme-generator": "1.0.4",
 		"@types/node": "^7.0.10",
 		"eslint": "6.0.1",
 		"tslint": "5.18.0",
 		"tslint-config-prettier": "1.18.0",
-		"typescript": "^2.2.1",
-		"vscode-theme-generator": "git+https://git@github.com/moxer-theme/vscode-theme-generator.git"
+		"typescript": "^2.2.1"
 	},
 	"dependencies": {
 		"fs-extra": "8.1.0",
