@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@moxer/vscode-theme-generator@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@moxer/vscode-theme-generator/-/vscode-theme-generator-1.0.4.tgz#aed642f07f822a9572b535d69ec13176bb331d9a"
-  integrity sha512-2cK0oYib/GqVZzbQdlXgHKKNRJWOFl6cQqcpm7tlEyrtwGnWlmgzp0zkNiV6Ajlk/ZeiIwRU+ZhyQZmkq8VO9w==
+"@moxer/vscode-theme-generator@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@moxer/vscode-theme-generator/-/vscode-theme-generator-1.1.0.tgz#cea19b9f3b0c7f370e0eb11e1a95635c0913635c"
+  integrity sha512-QslF7P46BNE2f1qxqL0zQtRvrMIPBwK1xFAfgsjpNMOc8DslBLnqxvJKhCtcJa+lasA+wlpXGBZg1OBCx2A0qQ==
   dependencies:
     ansi-styles "^3.2.1"
     argparse "^1.0.10"

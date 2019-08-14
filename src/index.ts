@@ -10,7 +10,7 @@ import { generateTheme, IColorSet } from '@moxer/vscode-theme-generator';
  * Define paths
  */
 const buildPath: string = path.join(__dirname, '../build');
-const themes: any[] = [Moxer, MoxerBorderline];
+const themes: any[] = [ Moxer, MoxerBorderline ];
 
 /**
  * Checl if the build folder exist.
@@ -24,7 +24,7 @@ if (!fs.existsSync(buildPath)) {
  * Generate a [theme-name].json for each
  * theme file found inside src/themes
  */
-themes.forEach(theme => {
+themes.forEach((theme) => {
 	const colorSet: IColorSet = {
 		base: {
 			// Determines the overall background color
@@ -43,7 +43,7 @@ themes.forEach(theme => {
 		/**
 		 * Overrides workbench UI Elements
 		 */
-		overrides: {
+		workbench: {
 			/**
 			 * General elements style
 			 */
@@ -390,20 +390,26 @@ themes.forEach(theme => {
 			wordHighlight: theme.base.pink + '30',
 			// when the cursor is on a symbol, highlights places that symbol is written
 			wordHighlightStrong: theme.base.green + '30'
-		},
+		}
 		/**
 		 * Override all syntax tokens
 		 */
-
+		// customTokens: [
+		// 	{
+		// 		name: 'String',
+		// 		scope: [ 'string' ],
+		// 		settings: {
+		// 			fontStyle: 'normal',
+		// 			foreground: '#',
+		// 			background: '#'
+		// 		}
+		// 	}
+		// ]
 	};
 
 	/**
 	 * Call the theme generator for each
 	 * theme found in `themes`
 	 */
-	generateTheme(
-		theme.name,
-		colorSet,
-		path.join(__dirname, `../build/${theme.name}.json`)
-	);
+	generateTheme(theme.name, colorSet, path.join(__dirname, `../build/${theme.name}.json`));
 });

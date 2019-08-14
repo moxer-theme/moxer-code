@@ -59,7 +59,6 @@
 		]
 	},
 	"devDependencies": {
-		"@moxer/vscode-theme-generator": "1.0.4",
 		"@types/node": "^7.0.10",
 		"eslint": "6.0.1",
 		"tslint": "5.18.0",
@@ -67,6 +66,7 @@
 		"typescript": "^2.2.1"
 	},
 	"dependencies": {
+		"@moxer/vscode-theme-generator": "1.1.0",
 		"fs-extra": "8.1.0",
 		"prettier": "1.18.2"
 	}
