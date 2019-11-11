@@ -1,7 +1,7 @@
 import * as fs from 'fs-extra';
 import * as path from 'path';
+import Moxer from './themes/moxer';
 import MoxerBorderline from './themes/moxer-borderline';
-import Moxer from './themes/moxer.js';
 
 // tslint:disable-next-line: no-submodule-imports
 import { generateTheme, IColorSet } from '@moxer/vscode-theme-generator';
