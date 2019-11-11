@@ -124,6 +124,7 @@ themes.forEach((theme) => {
 			'activityBar.background': theme.ui.background,
 			'activityBar.border': theme.ui.background,
 			'activityBar.foreground': theme.ui.shade5,
+			'activityBar.activeBorder': theme.base.pink,
 			/**
 			 * Activity bar badges style
 			 */

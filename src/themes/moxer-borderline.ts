@@ -1,21 +1,6 @@
 export default {
 	name: 'Moxer-Borderline',
 	type: 'dark',
-	base: {
-		black: '#000000',
-		blue: '#435AAD',
-		brown: '#946A52',
-		cyan: '#81C5DA',
-		green: '#B2E4AE',
-		orange: '#BD733D',
-		paleblue: '#7CA4C0',
-		pink: '#D491B9',
-		purple: '#6D6BA5',
-		red: '#D46C6C',
-		violet: '#A99BE2',
-		white: '#ffffff',
-		yellow: '#F5DFA5'
-	},
 	ui: {
 		accent: '#fff017',
 		background: '#090A0F',
@@ -27,5 +12,20 @@ export default {
 		shade4: '#3F445A',
 		shade5: '#555B77',
 		shade6: '#6B7394'
+	},
+	base: {
+		white: '#ffffff',
+		black: '#000000',
+		red: '#E75A5A',
+		orange: '#E19235',
+		yellow: '#FEE17C',
+		green: '#A9EFA3',
+		cyan: '#70E3EB',
+		blue: '#4C71F6',
+		paleblue: '#69A7D3',
+		purple: '#5654BC',
+		brown: '#AB633B',
+		pink: '#E382BC',
+		violet: '#A18EEF'
 	}
 };

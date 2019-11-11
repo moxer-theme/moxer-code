@@ -16,16 +16,16 @@ export default {
 	base: {
 		white: '#ffffff',
 		black: '#000000',
-		red: '#D46C6C',
-		orange: '#BD733D',
-		yellow: '#F5DFA5',
-		green: '#B2E4AE',
-		cyan: '#81C5DA',
-		blue: '#435AAD',
-		paleblue: '#7CA4C0',
-		purple: '#6D6BA5',
-		brown: '#946A52',
-		pink: '#D491B9',
-		violet: '#A99BE2'
+		red: '#E75A5A',
+		orange: '#E19235',
+		yellow: '#FEE17C',
+		green: '#A9EFA3',
+		cyan: '#70E3EB',
+		blue: '#4C71F6',
+		paleblue: '#69A7D3',
+		purple: '#5654BC',
+		brown: '#AB633B',
+		pink: '#E382BC',
+		violet: '#A18EEF'
 	}
 };
