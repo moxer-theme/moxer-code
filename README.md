@@ -119,6 +119,10 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 }
 ```
 
+# Support
+
+<a href="https://www.patreon.com/bePatron?u=3309315" target="_blank"><img width="176px" src="https://i.ibb.co/RPJn9JC/Screenshot-2019-08-20-at-21-55-43.png"></a>
+
 ---
 
 <p align="center"> <img src="https://equinusocio.gallerycdn.vsassets.io/extensions/equinusocio/moxer-theme/1.2.0/1562674227593/Microsoft.VisualStudio.Services.Icons.Default" width=16 height=16/> Copyright &copy; 2019 Mattia Astorino</p>
