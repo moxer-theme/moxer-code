@@ -61,15 +61,14 @@
 		]
 	},
 	"devDependencies": {
-		"@types/node": "^7.0.10",
-		"eslint": "6.0.1",
-		"tslint": "5.18.0",
-		"tslint-config-prettier": "1.18.0",
-		"typescript": "^2.2.1"
-	},
-	"dependencies": {
 		"@moxer/vscode-theme-generator": "1.6.0",
+		"@types/node": "^7.0.10",
+		"@typescript-eslint/eslint-plugin": "2.15.0",
+		"@typescript-eslint/parser": "2.15.0",
+		"eslint": "6.8.0",
+		"eslint-config-xo-space": "0.22.0",
+		"eslint-config-xo-typescript": "0.24.1",
 		"fs-extra": "8.1.0",
-		"prettier": "1.18.2"
-	}
+		"typescript": "3.7.4"
+  }
 }
