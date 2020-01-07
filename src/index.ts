@@ -41,6 +41,73 @@ themes.forEach((theme) => {
 			foreground: theme.base.white
 		},
 		/**
+		 * Overrides specific syntax scopes provided
+		 * by the theme generator
+		 */
+		syntax: {
+			boolean: theme.base.pink,
+			class: theme.base.violet,
+			classMember: theme.base.red,
+			comment: theme.ui.shade4,
+			cssClass: theme.base.yellow,
+			cssId: theme.base.orange,
+			cssTag: theme.base.yellow,
+			function: theme.base.yellow,
+			functionCall: theme.base.violet,
+			identifier: theme.base.cyan,
+			keyword: theme.base.red,
+			storage: theme.ui.foreground,
+			string: theme.base.green,
+			stringEscape: theme.ui.foreground,
+			type: theme.base.pink,
+			punctuation: theme.base.pink
+		},
+		/**
+		 * Define the integrated shell
+		 * color palette
+		 */
+		terminal: {
+			black: theme.ui.shade3,
+			blue: theme.base.blue,
+			brightBlack: theme.ui.shade3,
+			brightBlue: theme.base.blue,
+			brightCyan: theme.base.cyan,
+			brightGreen: theme.base.green,
+			brightMagenta: theme.base.purple,
+			brightRed: theme.base.red,
+			brightWhite: theme.base.white,
+			brightYellow: theme.base.yellow,
+			cyan: theme.base.cyan,
+			green: theme.base.green,
+			magenta: theme.base.purple,
+			red: theme.base.red,
+			white: theme.base.white,
+			yellow: theme.base.yellow
+		},
+		/**
+		 * Define workbench colors
+		 */
+		ui: {
+			// highlights matches from the find widget
+			currentFindMatchHighlight: theme.ui.shade5,
+			// set the editor cursor color
+			cursor: theme.base.yellow,
+			// ighlights matches from the find widge
+			findMatchHighlight: theme.base.pink,
+			// highlights the selected area for "find in selection"
+			findRangeHighlight: theme.base.yellow + '30',
+			// set color for invisible characters/whitespaces
+			invisibles: theme.ui.shade1,
+			// highlights text which matches the selected text
+			selection: theme.ui.shade1,
+			// highlights text inside selected area
+			selectionHighlight: theme.base.yellow + '50',
+			// when the cursor is on a symbol, highlights places that symbol is read
+			wordHighlight: theme.base.pink + '30',
+			// when the cursor is on a symbol, highlights places that symbol is written
+			wordHighlightStrong: theme.base.green + '30'
+		},
+		/**
 		 * Overrides workbench UI Elements
 		 */
 		workbench: {
@@ -326,72 +393,6 @@ themes.forEach((theme) => {
 			'listFilterWidget.outline': theme.base.violet,
 			'listFilterWidget.noMatchesOutline': theme.base.violet
 		},
-		/**
-		 * Overrides specific syntax scopes provided
-		 * by the theme generator
-		 */
-		syntax: {
-			boolean: theme.base.pink,
-			class: theme.base.violet,
-			classMember: theme.base.red,
-			comment: theme.ui.shade4,
-			cssClass: theme.base.yellow,
-			cssId: theme.base.orange,
-			cssTag: theme.base.yellow,
-			function: theme.base.yellow,
-			functionCall: theme.base.violet,
-			identifier: theme.base.cyan,
-			keyword: theme.base.red,
-			storage: theme.ui.foreground,
-			string: theme.base.green,
-			stringEscape: theme.ui.foreground,
-			type: theme.base.pink
-		},
-		/**
-		 * Define the integrated shell
-		 * color palette
-		 */
-		terminal: {
-			black: theme.ui.shade3,
-			blue: theme.base.blue,
-			brightBlack: theme.ui.shade3,
-			brightBlue: theme.base.blue,
-			brightCyan: theme.base.cyan,
-			brightGreen: theme.base.green,
-			brightMagenta: theme.base.purple,
-			brightRed: theme.base.red,
-			brightWhite: theme.base.white,
-			brightYellow: theme.base.yellow,
-			cyan: theme.base.cyan,
-			green: theme.base.green,
-			magenta: theme.base.purple,
-			red: theme.base.red,
-			white: theme.base.white,
-			yellow: theme.base.yellow
-		},
-		/**
-		 * Define workbench colors
-		 */
-		ui: {
-			// highlights matches from the find widget
-			currentFindMatchHighlight: theme.ui.shade5,
-			// set the editor cursor color
-			cursor: theme.base.yellow,
-			// ighlights matches from the find widge
-			findMatchHighlight: theme.base.pink,
-			// highlights the selected area for "find in selection"
-			findRangeHighlight: theme.base.yellow + '30',
-			// set color for invisible characters/whitespaces
-			invisibles: theme.ui.shade1,
-			// highlights text which matches the selected text
-			selection: theme.ui.shade1,
-			// highlights text inside selected area
-			selectionHighlight: theme.base.yellow + '50',
-			// when the cursor is on a symbol, highlights places that symbol is read
-			wordHighlight: theme.base.pink + '30',
-			// when the cursor is on a symbol, highlights places that symbol is written
-			wordHighlightStrong: theme.base.green + '30'
-		}
 		/**
 		 * Override all syntax tokens
 		 */
