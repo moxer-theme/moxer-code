@@ -30,7 +30,7 @@
 	},
 	"engines": {
 		"node": "^11.0.0",
-		"vscode": "^1.37.0"
+		"vscode": "^1.40.0"
 	},
 	"categories": [
 		"Themes",
@@ -43,7 +43,9 @@
 		"theme",
 		"equinusocio"
 	],
-	"extensionKind": "ui",
+	"extensionKind": [
+		"ui"
+	],
 	"contributes": {
 		"themes": [
 			{
@@ -66,7 +68,7 @@
 		"typescript": "^2.2.1"
 	},
 	"dependencies": {
-		"@moxer/vscode-theme-generator": "1.1.0",
+		"@moxer/vscode-theme-generator": "1.6.0",
 		"fs-extra": "8.1.0",
 		"prettier": "1.18.2"
 	}
