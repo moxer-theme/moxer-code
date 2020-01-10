@@ -1,7 +1,8 @@
 {
 	"javascript.validate.enable": false,
 	"files.exclude": {
-		"**/*.js.map": true
+		"**/*.js.map": true,
+		"**/*.js": true
 	},
 	"editor.formatOnSave": false,
 	"eslint.enable": true,
