@@ -60,7 +60,9 @@ themes.forEach(theme => {
       string: theme.base.green,
       stringEscape: theme.ui.foreground,
       type: theme.base.pink,
-      punctuation: theme.base.pink
+      punctuation: theme.base.pink,
+      variable: theme.ui.foreground,
+      number: theme.base.orange
     },
     /**
 		 * Define the integrated shell
