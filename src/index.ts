@@ -56,7 +56,7 @@ themes.forEach(theme => {
       functionCall: theme.base.violet,
       identifier: theme.base.cyan,
       keyword: theme.base.red,
-      storage: theme.ui.foreground,
+      storage: theme.base.cyan,
       string: theme.base.green,
       stringEscape: theme.ui.foreground,
       type: theme.base.pink,
