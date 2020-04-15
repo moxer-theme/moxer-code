@@ -122,7 +122,7 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 # Support me
 
 <a href="https://github.com/sponsors/equinusocio">
-  <img src="https://user-images.githubusercontent.com/10454741/79366665-e259cf00-7f4c-11ea-8f6f-4143edb1d0d0.png" width="72px">
+  <img src="https://user-images.githubusercontent.com/10454741/79366665-e259cf00-7f4c-11ea-8f6f-4143edb1d0d0.png" width="86px">
 </a>
 
 ---
