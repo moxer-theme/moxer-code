@@ -119,9 +119,11 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 }
 ```
 
-# Support
+# Support me
 
-<a href="https://www.patreon.com/bePatron?u=3309315" target="_blank"><img width="176px" src="https://i.ibb.co/RPJn9JC/Screenshot-2019-08-20-at-21-55-43.png"></a>
+<a href="https://github.com/sponsors/equinusocio">
+  <img src="https://user-images.githubusercontent.com/10454741/79366665-e259cf00-7f4c-11ea-8f6f-4143edb1d0d0.png" width="72px">
+</a>
 
 ---
 
