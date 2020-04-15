@@ -1,13 +1,15 @@
 {
-	"javascript.validate.enable": false,
-	"files.exclude": {
-		"**/*.js.map": true,
-		"**/*.js": true
-	},
-	"editor.formatOnSave": false,
-	"eslint.enable": true,
-	"editor.codeActionsOnSave": {
-   	"source.fixAll.eslint": true
-	},
-	"editor.codeActionsOnSaveTimeout": 2000
+  "eslint.alwaysShowStatus": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.validate.enable": false,
+  "files.exclude": {
+    "**/*.js.map": true,
+    "**/*.js": true
+  },
+  "editor.formatOnSave": false,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.codeActionsOnSaveTimeout": 2000
 }
