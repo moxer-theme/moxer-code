@@ -2,6 +2,7 @@ export default {
   name: 'Moxer-Borderline',
   type: 'dark',
   ui: {
+    contrast: '#FFFFFF',
     accent: '#fff017',
     background: '#090A0F',
     borders: '#2C303F50',

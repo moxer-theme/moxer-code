@@ -2,6 +2,7 @@ import * as fs from 'fs-extra';
 import * as path from 'path';
 import Moxer from './themes/moxer';
 import MoxerBorderline from './themes/moxer-borderline';
+import MoxerLight from './themes/moxer-light';
 
 // Tslint:disable-next-line: no-submodule-imports
 import {generateTheme, IColorSet} from '@moxer/vscode-theme-generator';
@@ -10,7 +11,7 @@ import {generateTheme, IColorSet} from '@moxer/vscode-theme-generator';
  * Define paths
  */
 const buildPath: string = path.join(__dirname, '../build');
-const themes: any[] = [Moxer, MoxerBorderline];
+const themes: any[] = [Moxer, MoxerBorderline, MoxerLight];
 
 /**
  * Checl if the build folder exist.
@@ -38,7 +39,7 @@ themes.forEach(theme => {
       // Determines functionCall and number
       color4: theme.base.paleblue,
       // Determines the overall text foreground color
-      foreground: theme.base.white
+      foreground: theme.ui.contrast
     },
     /**
 		 * Overrides specific syntax scopes provided
@@ -77,13 +78,13 @@ themes.forEach(theme => {
       brightGreen: theme.base.green,
       brightMagenta: theme.base.purple,
       brightRed: theme.base.red,
-      brightWhite: theme.base.white,
+      brightWhite: theme.ui.contrast,
       brightYellow: theme.base.yellow,
       cyan: theme.base.cyan,
       green: theme.base.green,
       magenta: theme.base.purple,
       red: theme.base.red,
-      white: theme.base.white,
+      white: theme.ui.contrast,
       yellow: theme.base.yellow
     },
     /**
@@ -161,7 +162,7 @@ themes.forEach(theme => {
 			 * Window panels elements style
 			 */
       'panelTitle.inactiveForeground': theme.ui.shade4,
-      'panelTitle.activeForeground': theme.base.white,
+      'panelTitle.activeForeground': theme.ui.contrast,
       'panelTitle.activeBorder': theme.base.yellow,
       /**
 			 * Code Editor style
@@ -223,7 +224,7 @@ themes.forEach(theme => {
       'tab.inactiveModifiedBorder': theme.ui.shade5,
       'tab.activeModifiedBorder': theme.base.pink,
       'tab.unfocusedActiveBorder': theme.ui.shade4,
-      'tab.activeForeground': theme.base.white,
+      'tab.activeForeground': theme.ui.contrast,
       'tab.activeBackground': theme.ui.background,
       'tab.inactiveForeground': theme.ui.shade4,
       'tab.inactiveBackground': theme.ui.background,
@@ -243,7 +244,7 @@ themes.forEach(theme => {
       'statusBar.background': theme.ui.background,
       'statusBar.foreground': theme.ui.shade4,
       'statusBar.debuggingBackground': theme.base.purple,
-      'statusBar.debuggingForeground': theme.base.white,
+      'statusBar.debuggingForeground': theme.ui.contrast,
       /**
 			 * Statusbar items style
 			 */
@@ -315,7 +316,7 @@ themes.forEach(theme => {
       'list.inactiveSelectionForeground': theme.base.cyan,
       'list.inactiveSelectionBackground': theme.ui.shade1 + '50',
       'list.focusBackground': theme.ui.shade1,
-      'list.focusForeground': theme.base.white,
+      'list.focusForeground': theme.ui.contrast,
       'list.highlightForeground': theme.base.cyan,
       'list.dropBackground': theme.ui.shade2,
       /**

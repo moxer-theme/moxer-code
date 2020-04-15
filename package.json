@@ -57,6 +57,11 @@
 				"label": "Moxer Borderline",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer-Borderline.json"
+			},
+			{
+				"label": "Moxer Light",
+				"uiTheme": "vs",
+				"path": "./build/Moxer-Light.json"
 			}
 		]
 	},
