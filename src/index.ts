@@ -301,10 +301,15 @@ themes.forEach(theme => {
       'dropdown.background': theme.ui.shade1,
       'dropdown.border': theme.ui.shade1,
       /**
+       * Quick Panel
+       */
+      'quickInput.background': theme.ui.background,
+      'quickInput.foreground': theme.ui.shade4,
+      /**
 			 * Lists style
 			 */
       'list.hoverForeground': theme.ui.foreground,
-      'list.hoverBackground': theme.ui.background + '00',
+      'list.hoverBackground': `${theme.ui.background}00`,
       'list.activeSelectionBackground': theme.ui.background + '00',
       'list.activeSelectionForeground': theme.base.cyan,
       'list.inactiveSelectionForeground': theme.base.cyan,
