@@ -21,12 +21,12 @@ export default {
     orange: '#E19235',
     yellow: '#E0AF00',
     green: '#3DB931',
-    cyan: '#1FCBD6',
+    cyan: '#00B6C2',
     blue: '#4C71F6',
     paleblue: '#69A7D3',
     purple: '#5654BC',
     brown: '#AB633B',
     pink: '#E382BC',
-    violet: '#A18EEF'
+    violet: '#9883EC'
   }
 };
