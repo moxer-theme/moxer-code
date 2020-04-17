@@ -20,7 +20,7 @@
 
 You can install this awesome theme through the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Equinusocio.moxer-theme).
 
-<p align="center"><img width="800px" src="https://raw.githubusercontent.com/moxer-theme/moxer-code/master/assets/screen.png"></p>
+<p align="center"><img width="800px" src="https://user-images.githubusercontent.com/10454741/79561033-ebf84980-80a8-11ea-869a-2343108a5645.png"></p>
 
 ### Installation
 
@@ -122,7 +122,7 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 # Support me
 
 <a href="https://github.com/sponsors/equinusocio">
-  <img src="https://user-images.githubusercontent.com/10454741/79561033-ebf84980-80a8-11ea-869a-2343108a5645.png" width="86px">
+  <img src="https://user-images.githubusercontent.com/10454741/79366665-e259cf00-7f4c-11ea-8f6f-4143edb1d0d0.png" width="86px">
 </a>
 
 ---
