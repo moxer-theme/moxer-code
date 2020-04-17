@@ -2,6 +2,7 @@ export default {
   name: 'Moxer',
   type: 'dark',
   ui: {
+    contrast: '#FFFFFF',
     accent: '#fff017',
     background: '#090A0F',
     foreground: '#8E95B4',

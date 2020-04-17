@@ -57,6 +57,11 @@
 				"label": "Moxer Borderline",
 				"uiTheme": "vs-dark",
 				"path": "./build/Moxer-Borderline.json"
+			},
+			{
+				"label": "Moxer Light",
+				"uiTheme": "vs",
+				"path": "./build/Moxer-Light.json"
 			}
 		]
 	},
@@ -71,5 +76,6 @@
 		"eslint-config-xo-typescript": "0.24.1",
 		"fs-extra": "8.1.0",
 		"typescript": "3.7.4"
-	}
+	},
+	"dependencies": {}
 }
