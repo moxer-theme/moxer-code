@@ -27,6 +27,7 @@ if (!fs.existsSync(buildPath)) {
  */
 themes.forEach(theme => {
   const colorSet: IColorSet = {
+    semanticHighlighting: true,
     base: {
       // Determines the overall background color
       background: theme.ui.background,
