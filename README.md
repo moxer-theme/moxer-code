@@ -107,15 +107,16 @@ You can override the theme UI and schemes colors by adding these theme-specific 
 
 ```js
 {
-    // Controls the font family. You need Operator Mono Font
-    "editor.fontFamily": "Operator Mono Lig",
-    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    "editor.lineHeight": 30,
-    // Enables font ligatures
-    "editor.fontLigatures": true,
-    // Controls if file decorations should use badges.
-   "explorer.decorations.badges": true,
-	"explorer.decorations.colors": false
+  // Controls the font family. You need Operator Mono Font
+  "editor.fontFamily": "Operator Mono Lig",
+  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+  "editor.lineHeight": 30,
+  // Enables font ligatures
+  "editor.fontLigatures": true,
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": true,
+  // Disable GIT colors for files
+  "explorer.decorations.colors": false
 }
 ```
 
