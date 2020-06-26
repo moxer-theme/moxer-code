@@ -144,7 +144,7 @@ themes.forEach(theme => {
 			 * Sidebar style
 			 */
       'sideBar.background': theme.ui.background,
-      'sideBar.foreground': theme.ui.shade4,
+      'sideBar.foreground': theme.ui.shade5,
       'sideBar.border': theme.ui.shade2 + '50',
       /**
 			 * Sidebar elements style
@@ -358,7 +358,7 @@ themes.forEach(theme => {
       'gitDecoration.conflictingResourceForeground': theme.base.yellow,
       'gitDecoration.modifiedResourceForeground': theme.base.blue,
       'gitDecoration.untrackedResourceForeground': theme.base.green,
-      'gitDecoration.ignoredResourceForeground': theme.ui.shade1,
+      'gitDecoration.ignoredResourceForeground': theme.ui.shade2,
       /**
 			 * Breadcrumb style
 			 */

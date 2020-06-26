@@ -11,8 +11,8 @@ export default {
     shade2: '#B9C2D5',
     shade3: '#A9B4CB',
     shade4: '#99A7C2',
-    shade5: '#8999B8',
-    shade6: '#798BAF'
+    shade5: '#798BAF',
+    shade6: '#697DA5'
   },
   base: {
     white: '#ffffff',
