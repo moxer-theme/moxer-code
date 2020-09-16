@@ -38,7 +38,7 @@ jobs:
         if: steps.cache-yarn-cache.outputs.cache-hit != 'true' || steps.cache-node-modules.outputs.cache-hit != 'true'
 
       - name: Build extension
-        run: yarn build
+        run: yarn start
 
       - uses: lannonbr/vsce-action@master
         with:
