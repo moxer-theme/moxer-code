@@ -27,6 +27,8 @@
 		"precommit": "yarn lint",
 		"prestart": "tsc src/index.ts",
 		"start": "node src/index.js",
+		"release": "git pull && standard-version --release-as minor && git push --follow-tags",
+		"release:major": "git pull && standard-version --release-as major && git push --follow-tags",
 		"update:deps": "yarn upgrade-interactive --latest && yarn upgrade"
 	},
 	"engines": {
@@ -78,5 +80,7 @@
 		"fs-extra": "9.0.1",
 		"typescript": "4.0.2"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"standard-version": "9.0.0"
+	}
 }
