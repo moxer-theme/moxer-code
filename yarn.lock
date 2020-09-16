@@ -39,10 +39,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@moxer/vscode-theme-generator@1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@moxer/vscode-theme-generator/-/vscode-theme-generator-1.19.0.tgz#fd859c62035801a37181ed8d1ca255c5b2827b7d"
-  integrity sha512-4t0/KX7r+SMxyfWyFvp/B2N3M8dw0tkc6YHaP90ymiPQnqXRzJP7NA7DzD/JgGfej7fdX1caKM0tcTqbKSrn0Q==
+"@moxer/vscode-theme-generator@1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@moxer/vscode-theme-generator/-/vscode-theme-generator-1.20.0.tgz#f7db649f45059cd5efb2f4bb5238408f0fe2d7eb"
+  integrity sha512-N78LvgWhaSp9oozFhXM9IZbCqdn+FOp0xwVsx9vopOZ9MZ9wglfVR/eqcjWC/eab0FNCSBrCfWq/LIXmAzX2zQ==
   dependencies:
     ansi-styles "^3.2.1"
     argparse "^1.0.10"
