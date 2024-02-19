@@ -1,13 +1,18 @@
 {
-	"version": "2.0.0",
-	"command": "npm",
-	"type": "shell",
-	"presentation": {
-		"reveal": "always"
-	},
-	"tasks": [{
-		"group": "build",
-		"label": "build",
-		"args": ["start"]
-	}]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "args": [
+        "run",
+        "build"
+      ],
+      "command": "npm",
+      "label": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
 }

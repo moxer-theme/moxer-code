@@ -25,14 +25,14 @@
 	"scripts": {
 		"lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
 		"precommit": "yarn lint",
-		"prestart": "tsc src/index.ts",
-		"start": "node src/index.js",
+		"prebuild": "tsc src/index.ts",
+		"build": "node src/index.js",
 		"release": "git pull && standard-version --release-as minor && git push --follow-tags",
 		"release:major": "git pull && standard-version --release-as major && git push --follow-tags",
-		"update:deps": "yarn upgrade-interactive --latest && yarn upgrade"
+		"update:deps": "npx npm-upgrade"
 	},
 	"engines": {
-		"node": "^12.0.0",
+		"node": "^16.0.0",
 		"vscode": "^1.40.0"
 	},
 	"categories": [
@@ -69,18 +69,18 @@
 		]
 	},
 	"devDependencies": {
-		"@moxer/vscode-theme-generator": "1.20.0",
-		"@types/fs-extra": "9.0.1",
-		"@types/node": "^14.10.2",
-		"@typescript-eslint/eslint-plugin": "4.1.1",
-		"@typescript-eslint/parser": "4.1.1",
-		"eslint": "7.9.0",
-		"eslint-config-xo-space": "0.25.0",
-		"eslint-config-xo-typescript": "0.32.0",
-		"fs-extra": "9.0.1",
-		"typescript": "4.0.2"
+		"@moxer/vscode-theme-generator": "1.21.0",
+		"@types/fs-extra": "11.0.4",
+		"@types/node": "^20.11.19",
+		"@typescript-eslint/eslint-plugin": "7.0.1",
+		"@typescript-eslint/parser": "7.0.1",
+		"eslint": "8.56.0",
+		"eslint-config-xo-space": "0.35.0",
+		"eslint-config-xo-typescript": "2.0.0",
+		"fs-extra": "11.2.0",
+		"typescript": "5.3.3"
 	},
 	"dependencies": {
-		"standard-version": "9.0.0"
+		"standard-version": "9.5.0"
 	}
 }
