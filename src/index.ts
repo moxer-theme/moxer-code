@@ -371,8 +371,8 @@ themes.forEach(theme => {
 			 * Custom menus style
 			 */
       'menu.background': theme.ui.shade1,
-      'menu.foreground': theme.ui.shade3,
-      'menu.selectionBackground': theme.ui.shade1,
+      'menu.foreground': theme.ui.foreground,
+      'menu.selectionBackground': theme.ui.shade2,
       'menu.selectionForeground': theme.ui.foreground,
       'menu.selectionBorder': theme.ui.shade1,
       'menu.separatorBackground': theme.ui.shade3,
