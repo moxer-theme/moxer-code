@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.7.0](https://github.com/moxer-theme/moxer-code/compare/v7.6.0...v7.7.0) (2024-02-19)
+
+
+### Bug Fixes
+
+* update readme ([4d151a9](https://github.com/moxer-theme/moxer-code/commit/4d151a92659bf3a1cbfb8aad544ab83bc835235b))
+
 ## [7.6.0](https://github.com/moxer-theme/moxer-code/compare/v7.5.0...v7.6.0) (2024-02-19)
 
 
